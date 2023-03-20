@@ -33,3 +33,31 @@ with open("json_API/a.json", "w") as file:
     json.dump(objeto_contenedor, file)
 with open("json_API/a.json", "r") as file:
     print(json.load(file))
+
+
+
+import json
+import Cat
+import Coche
+
+# Crear una lista con 5 instancias de Cat.
+gatos = [
+    Cat("Pelusa", "Persa", 2, "Negro"),
+    Cat("frank", "Siames", 4, "Marrón"),
+    Cat("Garfield", "Mestizo", 1, "Naranja"),
+    Cat("Luna", "Sphynx", 3, "Gris"),
+    Cat("pedro", "Siames", 5, "Blanco y Marrón")
+]
+
+# Crear una lista con 5 instancias de Coche.
+coches = [
+    Coche("Toyota", "Corolla", 2020, 15000),
+    Coche("Honda", "Civic", 2019, 12000),
+    Coche("Ford", "Mustang", 2021, 35000),
+    Coche("Chevrolet", "Camaro", 2020, 40000),
+    Coche("Nissan", "Altima", 2018, 9000)
+]
+
+# Convertir las dos listas en listas de diccionarios utilizando el método to_dict().
+gatos_dict = [gato.to_dict() for gato in gatos]
+coches_dict = [coche.to_dict() for coche in coches]
