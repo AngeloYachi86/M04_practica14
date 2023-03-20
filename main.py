@@ -31,12 +31,11 @@ objeto_contenedor = {
 # Guardamos el objeto contenedor en un archivo .json
 with open("json_API/a.json", "w") as file:
     json.dump(objeto_contenedor, file)
-with open("json_API/a.json", "r") as file:
-    print(json.load(file))
 
 
 
-import json
+
+
 import Cat
 import Coche
 
@@ -61,3 +60,4 @@ coches = [
 # Convertir las dos listas en listas de diccionarios utilizando el método to_dict().
 gatos_dict = [gato.to_dict() for gato in gatos]
 coches_dict = [coche.to_dict() for coche in coches]
+
