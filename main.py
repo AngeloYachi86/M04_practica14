@@ -31,5 +31,4 @@ objeto_contenedor = {
 # Guardamos el objeto contenedor en un archivo .json
 with open("json_API/a.json", "w") as file:
     json.dump(objeto_contenedor, file)
-with open("json_API/a.json", "r") as file:
-    print(json.load(file))
+
